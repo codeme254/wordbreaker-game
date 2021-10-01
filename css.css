@@ -1,0 +1,118 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 2rem;
+    line-height: 1.7;
+    color: #333;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 60%;
+    /* margin: 2rem auto; */
+    /* background-color: #ccc; */
+    padding: 6rem;
+    box-shadow: 0 0 10px;
+    border-radius: 4px;
+    position: relative;
+}
+.btn-start{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.cracked-words{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: tomato;
+}
+.game-center{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.game-center > *:not(:last-child){
+    margin-bottom: 2rem;
+}
+.game-center__word{
+    font-size: 3.5rem;
+    letter-spacing: 4.5px;
+    color: tomato;
+    /* box-shadow: 0 0 5px; */
+}
+.game-center__input{
+    padding: 1rem 1.5rem;
+    color: #333;
+    border: none;
+    outline: none;
+    padding: none;
+    box-shadow: 0 0 5px;
+    border-radius: 3px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    border-bottom: 3px solid transparent;
+    animation-fill-mode: backwards;
+    transition: all .4s ease;
+}
+.game-center__input:focus{
+    border-bottom: 3px solid blue;
+}
+.game-center__input:not(:placeholder-shown){
+    border-bottom: 3px solid tomato;
+}
+.game-center__chances{
+    font-size: 2.9rem;
+    letter-spacing: 2px;
+    color: tomato;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 2rem auto;
+}
+.buttons > *:not(:last-child){
+    margin-right: 2rem;
+}
+.btn{
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .4s ease;
+}
+.btn:hover{
+    opacity: .8;
+}
+.btn:active{
+    transform: translateY(3px)
+}
+.word__status{
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    /* font-size: 2.4rem; */
+}
+.word__status > *:not(:last-child){
+    margin-right: auto;
+}
